@@ -1,0 +1,11 @@
+#steps to integrate Jenkins CI to Github
+1- Create a repo or click on existing repo
+2- Go to setting -> Webhooks
+3-  In the Payload URL field, paste your Jenkins environment URL. 
+At the end of this URL, add /github-webhook/
+In the Content type select application/json and leave the Secret field empty.
+Next Step : In the 'Which events would you like to trigger this webhook?' section, choose Let me select individual events. 
+Then, check Pull Requests and Pushes. At the end of this option, make sure that Active is checked and click on Add webhook.
+We're done with the configuration on GitHub's side! Now, let's move on to Jenkins. ==========
+
+ In Jenkins, click on New Item to create a new project.===  https://dzone.com/articles/how-to-integrate-your-github-repository-to-your-je#:~:text=How%20to%20Integrate%20Your%20GitHub%20Repository%20to%20Your,the%20end%20of%20this%20URL%2C%20add%20%2Fgithub-webhook%2F.%20
